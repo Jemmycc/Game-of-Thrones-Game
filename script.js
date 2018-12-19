@@ -40,7 +40,7 @@ $(document).ready(function () {
         },
         "Lormund Gantsbare": {
             name: "Lormund Gantsbare",
-            health: 70,
+            health: 55,
             attack: 16,
             imageUrl: "images/a6.jpg",
             enemyAttackBack: 7
@@ -78,7 +78,7 @@ $(document).ready(function () {
         var charDiv = $("<div class='character' data-name='" + character.name + "'>");
         var charName = $("<div class='character-name'>").text(character.name);
         var charImage = $("<img alt='image' class='character-image'>").attr("src", character.imageUrl);
-        var charHealth = $("<div class='character-health'>").text(character.health);
+        var charHealth = $("<div class='character-health'>").text("strength: " + character.health);
         charDiv.append(charImage).append(charName).append(charHealth);
         $(renderArea).append(charDiv);
     };
