@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Game of Thrones Game
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Added link to the css style sheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher|Titillium+Web|ZCOOL+XiaoWei" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/united/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+d4wMJSxEP3vzs2qZBElQRTZMXwgWH15Nyn2K/9XjKiHmh3sBuk1Un/IbcdMcYC4" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-section-title">Game is ready. Please roll up to start the game!</div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="main-game-section">
+
+                    <!-- Where the characters are initially available to be selected. -->
+                    <div id="characters-section">
+                        <div class="section-title"><SMALL>STEP 1:</SMALL> Select Your Character</div>
+                    </div>
+
+                    <!-- Where our enemies available to attack will appear. -->
+                    <div id="available-to-attack-section">
+                        <div class="section-title"><SMALL>STEP 2:</SMALL> Select Your Competitor</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-4">
+
+                <!-- Section for our selected character. -->
+                <div id="selected-character-section">
+                    <div class="section-title3">Your Character</div>
+
+                    <!-- Where our selected character will appear. -->
+                    <div id="selected-character"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+                <div class="section-title2">Fight Station</div>
+                <div id="fight-section">
+                    <button id="attack-button"><img id="clip" src="./images/62.png">click to attack</button>
+                </div>
+                <!-- Area for game messages. -->
+                <div id="game-message"></div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="action">
+                    <div class="character-section">
+                        <div class="section-title3">Competitor</div>
+
+                        <div id="defender"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
